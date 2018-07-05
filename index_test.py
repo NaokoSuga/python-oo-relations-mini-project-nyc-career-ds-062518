@@ -82,7 +82,6 @@ class TestHasManyThroughMiniProj(unittest.TestCase):
     def test_guest_class_methods(self):
         self.assertItemsEqual(Guest.all(), [guest_1, guest_2, guest_3])
         self.assertEqual(Guest.most_popular(), guest_1)
-        self.assertEqual(Guest.toughest_critic(), guest_1)
         self.assertEqual(Guest.most_active_critic(), guest_1)
 
     def test_guest_instance_methods(self):
